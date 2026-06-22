@@ -1,0 +1,694 @@
+<img class="full" onclick="OpenLink(this, 'index.html')" src="images/om.jpg">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ben 10: Omniverse</title><link rel="stylesheet" href="styles/pico.min.css"><style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        .episode-list img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .episode-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+        }
+        .episode-thumbnail {
+            width: 150px;
+            height: 84px; /* 16:9 aspect ratio */
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .episode-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .episode-details {
+            margin-left: 15px;
+            flex-grow: 1;
+        }
+        .episode-details h3 {
+            margin: 0 0 5px 0;
+            font-size: 1em;
+            color: white;
+        }
+        .episode-details p {
+            margin: 0;
+            color: #bbb;
+            font-size: 0.9em;
+        }
+        .season-tabs {
+            display: flex;
+            left-content: center;
+            overflow-x: auto;
+            background-color: #121212;
+            padding: 10px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .season-tab {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+        .season-tab.active, .season-tab:hover {
+            background-color: #555;
+        }
+        .season-tab:focus {
+            outline: 4px solid #121212;
+        }
+        .episode-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .episode-title h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .episode-title p {
+            margin: 0;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+<p style="color: white;">Ben was all set to be a solo hero with his new Omnitrix after Gwen and Kevin left for college, but Grandpa Max teamed him up with a rookie, by-the-book partner. Together they explore a secret alien city, known as Undertown beneath the city of Bellwood. Meanwhile, a mysterious hunter, known as Khyber, sets his sights on Ben! With all new alien heroes to choose from, the fun is just getting started. It's a whole new Omniverse!</p>
+
+        <div class="season-tabs">
+            <button class="season-tab active" onclick="showSeason(1)">Season 1</button>
+            <button class="season-tab" onclick="showSeason(2)">Season 2</button>
+            <button class="season-tab" onclick="showSeason(3)">Season 3</button>
+            <button class="season-tab" onclick="showSeason(4)">Season 4</button>
+     
+            <button class="season-tab" onclick="showSeason(5)">Season 5</button>
+            <button class="season-tab" onclick="showSeason(6)">Season 6</button>
+            <button class="season-tab" onclick="showSeason(7)">Season 7</button>
+            <button class="season-tab" onclick="showSeason(8)">Season 8</button>
+
+</div>
+
+
+        <div id="season-1" class="episode-list"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-episode-01&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTQxMzg0NjQ2MF5BMl5BanBnXkFtZTgwMjAxNDIzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>The More Things Change: Part 1</h3><p>S1E01 • 22 Sep 2012 • 22 min</p></div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-episode-02&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTQyMjk4MTI1M15BMl5BanBnXkFtZTgwNzQ5NTEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>The More Things Change: Part 2</h3><p>S1E02 • 22 Sep 2012 • 22 min</p></div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-episode-03&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTliZTIzOTktMmQyMi00NTg3LTg5YWQtZjY4MGUzZTA0MzA1XkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UX500_CR0,0,500,281_.jpg"></div>
+    <div class="episode-details"><h3>A Jolt from the Past</h3><p>S1E03 • 29 Sep 2012 • 22 min</p></div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-episode-04&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMjAxNTU4NTkzMV5BMl5BanBnXkFtZTgwNTYzNzEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>Trouble Helix</h3><p>S1E04 • 06 Oct 2012 • 22 min</p></div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-episode-05&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMjM5MjI0NDc0NF5BMl5BanBnXkFtZTgwNzEyMzIzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>Have I Got a Deal for You</h3><p>S1E05 • 13 Oct 2012 • 22 min</p></div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-episode-06&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTY1MTUzNDQyMV5BMl5BanBnXkFtZTgwNTk1OTEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>It Was Them</h3><p>S1E06 • 20 Oct 2012 • 22 min</p></div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-episode-07&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTUwMjQ2ODc0Nl5BMl5BanBnXkFtZTgwNDU1NDEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>So Long, and Thanks for All the Smoothies</h3><p>S1E07 • 27 Oct 2012 • 22 min</p></div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-episode-08&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTk5MDMyNDMyNF5BMl5BanBnXkFtZTgwMTQ1MTIzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>Hot Stretch</h3><p>S1E08 • 03 Nov 2012 • 22 min</p></div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-episode-09&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMmI3NzFiOTAtNzliYS00OWI5LWJlYTEtNzU5YWQwNTQ4MmE4XkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UY281_CR0,0,500,281_.jpg"></div>
+    <div class="episode-details"><h3>Predators and Prey: Part 1</h3><p>S1E09 • 10 Nov 2012 • 22 min</p></div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-episode-10&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTQwNjgzODEzMV5BMl5BanBnXkFtZTgwMzM1NDEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>Predators and Prey: Part 2</h3><p>S1E10 • 17 Nov 2012 • 22 min</p></div>
+</div></div>
+        <div id="season-2" class="episode-list" style="display: none;"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-02-8211-episode-01&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTUxMjQ2Nzk3OF5BMl5BanBnXkFtZTgwMjI1MzEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div><div class="episode-details"><h3>Outbreak</h3><p>S2E01 • 30 Nov 2012 • 22 min</p></div></div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-02-8211-episode-02&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTQ3ODk4ODIzMF5BMl5BanBnXkFtZTgwNTkyNDIzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div><div class="episode-details"><h3>Many Happy Returns</h3><p>S2E02 • 07 Dec 2012 • 22 min</p></div></div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-02-8211-episode-03&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTUwMDU3NTAxMF5BMl5BanBnXkFtZTgwODg5MjEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div><div class="episode-details"><h3>Gone Fishin'</h3><p>S2E03 • 14 Dec 2012 • 22 min</p></div></div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-02-8211-episode-04&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTA3NTY5OTUxNTZeQTJeQWpwZ15BbWU4MDYzNzIxMzIx._V1_QL75_UX500_CR0,47,500,281_.jpg"></div><div class="episode-details"><h3>Blukic and Driba Go to Mr. Smoothy's</h3><p>S2E04 • 21 Dec 2012 • 22 min</p></div></div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-02-8211-episode-05&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTQ0Nzc2MTE0Nl5BMl5BanBnXkFtZTgwODQ3MjEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div><div class="episode-details"><h3>Malefactor</h3><p>S2E05 • 28 Dec 2012 • 22 min</p></div></div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-02-8211-episode-06&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTkwNDM3OTMyM15BMl5BanBnXkFtZTgwNTY3MjEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div><div class="episode-details"><h3>Arrested Development</h3><p>S2E06 • 08 Feb 2013 • 22 min</p></div></div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-02-8211-episode-07&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTU4MjYwNjA4Nl5BMl5BanBnXkFtZTgwODY4OTEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div><div class="episode-details"><h3>Bros in Space</h3><p>S2E07 • 15 Feb 2013 • 22 min</p></div></div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-02-8211-episode-08&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTYyOTE3OTk2NF5BMl5BanBnXkFtZTgwOTU3MjEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div><div class="episode-details"><h3>Ben Again</h3><p>S2E08 • 22 Feb 2013 • 22 min</p></div></div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-02-8211-episode-09&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMjAzNTMzNTczNV5BMl5BanBnXkFtZTgwNjc0MzIzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div><div class="episode-details"><h3>Store 23</h3><p>S2E09 • 01 Mar 2013 • 22 min</p></div></div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-02-8211-episode-10&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BZmM0YTc1NWYtNjIxOS00ZmMyLTg5ZDEtZjVmMGJlMzMwZDlmXkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UY281_CR0,0,500,281_.jpg"></div><div class="episode-details"><h3>Special Delivery</h3><p>S2E10 • 08 Mar 2013 • 22 min</p></div></div></div>
+        <div id="season-3" class="episode-list" style="display: none;"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-03-8211-episode-01&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTgxNjE3NTY2MF5BMl5BanBnXkFtZTgwOTk2ODE1NTE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details">
+        <h3>Showdown: Part 1</h3>
+        <p>S3E01 • 15 Jul 2013 • 22 min</p>
+    </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-03-8211-episode-02&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BZTIwZDM0OTMtMzg5MS00NzkyLWI3ZmUtYzA4YWRiMWI2ZWQ5XkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UY281_CR0,0,500,281_.jpg"></div>
+    <div class="episode-details">
+        <h3>Showdown: Part 2</h3>
+        <p>S3E02 • 22 Jul 2013 • 22 min</p>
+    </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-03-8211-episode-03&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTQ3ODY2NzY1N15BMl5BanBnXkFtZTgwNTk2ODEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details">
+        <h3>Tummy Trouble</h3>
+        <p>S3E03 • 29 Jul 2013 • 22 min</p>
+    </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-03-8211-episode-04&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BNDQyODU5OTE2OV5BMl5BanBnXkFtZTgwNDYyODEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details">
+        <h3>Vilgax Must Croak</h3>
+        <p>S3E04 • 05 Aug 2013 • 22 min</p>
+    </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-03-8211-episode-05&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTczOTMwMjAwMl5BMl5BanBnXkFtZTgwODI1MzIzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details">
+        <h3>While You Were Away</h3>
+        <p>S3E05 • 12 Aug 2013 • 22 min</p>
+    </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-03-8211-episode-06&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BYTYwZDRkMjMtZDgyNi00YzRhLTgyYWItYjBiYTU3NDgzMmE0XkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UX500_CR0,0,500,281_.jpg"></div>
+    <div class="episode-details">
+        <h3>The Frogs of War: Part 1</h3>
+        <p>S3E06 • 19 Aug 2013 • 22 min</p>
+    </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-03-8211-episode-07&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BNDZlOWJkMGUtNGJmZS00Y2RjLWFlYWItOGQzN2M1YjliYTRjXkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UY281_CR0,0,500,281_.jpg"></div>
+    <div class="episode-details">
+        <h3>The Frogs of War: Part 2</h3>
+        <p>S3E07 • 26 Aug 2013 • 22 min</p>
+    </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-03-8211-episode-08&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTkyNzc4NjMxNV5BMl5BanBnXkFtZTgwMzYwMjEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details">
+        <h3>Rules of Engagement</h3>
+        <p>S3E08 • 02 Sep 2013 • 22 min</p>
+    </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-03-8211-episode-09&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTczODYxNDI4Nl5BMl5BanBnXkFtZTgwNDQ1MzIzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details">
+        <h3>Rad</h3>
+        <p>S3E09 • 09 Sep 2013 • 22 min</p>
+    </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-03-8211-episode-10&lang=0')" >
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BNDA3MzE4NjE3NV5BMl5BanBnXkFtZTgwOTg0MzIzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details">
+        <h3>Evil's Encore</h3>
+        <p>S3E10 • 16 Sep 2013 • 22 min</p>
+    </div>
+</div></div>
+        <div id="season-4" class="episode-list" style="display: none;"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-04-8211-episode-01&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTUxOTc0ODM3OF5BMl5BanBnXkFtZTgwMjUxNjEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>T.G.I.S.</h3>
+        <p>S4E01 • 05 Oct 2013 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-04-8211-episode-02&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjM1MDg0MjUwNl5BMl5BanBnXkFtZTgwOTIxMTEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Food Around the Corner</h3>
+        <p>S4E02 • 12 Oct 2013 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-04-8211-episode-03&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjA5OTgyNTAyNl5BMl5BanBnXkFtZTgwOTI2MjIzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Oh Mother, Where Art Thou?</h3>
+        <p>S4E03 • 19 Oct 2013 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-04-8211-episode-04&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTUwNDg0NDgzMV5BMl5BanBnXkFtZTgwMzI4ODEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Return to Forever</h3>
+        <p>S4E04 • 26 Oct 2013 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-04-8211-episode-05&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMDIwYzgxMTktYmEzZi00YjQ1LThhZjEtOTg2YmZjOWYxZjBjXkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UX500_CR0,0,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Mud Is Thicker Than Water</h3>
+        <p>S4E05 • 02 Nov 2013 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-04-8211-episode-06&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTQyODc2ODg3N15BMl5BanBnXkFtZTgwMDE2MzEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>OTTO Motives</h3>
+        <p>S4E06 • 09 Nov 2013 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-04-8211-episode-07&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTQzNjA1ODQ4MF5BMl5BanBnXkFtZTgwMjI4MzIzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>The Ultimate Heist</h3>
+        <p>S4E07 • 16 Nov 2013 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-04-8211-episode-08&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTZiNjM2ZTYtMGQ0ZC00NGMwLTgyY2ItY2U1NzFmOGZhNjMyXkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UX500_CR0,0,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>A Fistful of Brains</h3>
+        <p>S4E08 • 23 Nov 2013 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-04-8211-episode-09&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BZGRmNmE3YzktMzA2Ny00OTAxLWJiYTktM2Y4ODkzY2FkMjBlXkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UX500_CR0,0,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>For a Few Brains More</h3>
+        <p>S4E09 • 30 Nov 2013 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-04-8211-episode-10&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTQxNzM0NzE5MV5BMl5BanBnXkFtZTgwNjIxMjEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Max's Monster</h3>
+        <p>S4E10 • 07 Dec 2013 • 22 min</p>
+    </div>
+</div></div>
+        <div id="season-5" class="episode-list" style="display: none;"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-05-8211-episode-10&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTQ4OTU5MDQxNV5BMl5BanBnXkFtZTgwOTg0NzEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Collect This</h3>
+        <p>S5E10 • 19 Apr 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-05-8211-episode-09&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjM5OTQwMzQ0MV5BMl5BanBnXkFtZTgwMDg4MDIzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Catfight</h3>
+        <p>S5E09 • 12 Apr 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-05-8211-episode-08&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTk4MDEyMzE4MF5BMl5BanBnXkFtZTgwNTIxNzEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>The Vampire Strikes Back</h3>
+        <p>S5E08 • 05 Apr 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-05-8211-episode-07&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjM1NDUzMzU1OV5BMl5BanBnXkFtZTgwMDExNzEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Charmed, I'm Sure</h3>
+        <p>S5E07 • 29 Apr 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-05-8211-episode-06&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTA4MDgzNjc2ODZeQTJeQWpwZ15BbWU4MDcyMTcxMzIx._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Rad Monster Party</h3>
+        <p>S5E06 • 22 Apr 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-05-8211-episode-05&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTUwOTQ5Mjc4NF5BMl5BanBnXkFtZTgwODExNzEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Animo Crackers</h3>
+        <p>S5E05 • 29 Apr 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-05-8211-episode-04&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMzMxNjk0MDg1NF5BMl5BanBnXkFtZTgwNDM5OTEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>An American Benwolf in London</h3>
+        <p>S5E04 • 01 Mar 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-05-8211-episode-03&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTA2NzAxMTQ5NTReQTJeQWpwZ15BbWU4MDkyOTkxMzIx._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Bengeance Is Mine</h3>
+        <p>S5E03 • 08 Mar 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-05-8211-episode-02&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjEwNTg0NjIyMF5BMl5BanBnXkFtZTgwNjY2NzEzMjE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Mystery, Incorporeal</h3>
+        <p>S5E02 • 22 Feb 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-05-8211-episode-01&lang=0')">
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjE3Njk0NjU1N15BMl5BanBnXkFtZTgwNzY2ODE1NTE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Something Zombozo This Way Comes</h3>
+        <p>S5E01 • 04 Jan 2014 • 22 min</p>
+    </div>
+</div></div>
+        <div id="season-6" class="episode-list" style="display: none;"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-06-8211-episode-01&lang=0')">
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTc1Njk4NTEyOV5BMl5BanBnXkFtZTgwMDIzNTc5MjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>And Then There Were None</h3><p>S6E01 • 06 Oct 2014 • 22 min</p></div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-06-8211-episode-02&lang=0')">
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMjM2MTUwOTg5N15BMl5BanBnXkFtZTgwMTIzNTc5MjE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>And Then There Was Ben</h3><p>S6E02 • 07 Oct 2014 • 22 min</p></div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-06-8211-episode-03&lang=0')">
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMjEyMzUyODU4Nl5BMl5BanBnXkFtZTgwNzM2NTIwMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>The Vengers</h3><p>S6E03 • 08 Oct 2014 • 22 min</p></div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-06-8211-episode-04&lang=0')">
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTA1OTkzNjI1MjleQTJeQWpwZ15BbWU4MDUzNjUyMDMx._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>Cough It Up</h3><p>S6E04 • 09 Oct 2014 • 22 min</p></div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-06-8211-episode-05&lang=0')">
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMjExMTA0NTA3NV5BMl5BanBnXkFtZTgwNjM2NTIwMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>The Rooters of All Evil</h3><p>S6E05 • 10 Oct 2014 • 22 min</p></div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-06-8211-episode-06&lang=0')">
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTU5MTUzMzMxM15BMl5BanBnXkFtZTgwMzgzNjkyNTE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>Blukic and Driba Go to Area 51</h3><p>S6E06 • 13 Oct 2014 • 22 min</p></div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-06-8211-episode-07&lang=0')">
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMTc4NTgxODAwN15BMl5BanBnXkFtZTgwODM2NTIwMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>No Honor Among Bros</h3><p>S6E07 • 14 Oct 2014 • 22 min</p></div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-06-8211-episode-08&lang=0')">
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BODY4NDY1NDQxOF5BMl5BanBnXkFtZTgwNDM2NTIwMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>Universe Vs. Tennyson</h3><p>S6E08 • 15 Oct 2014 • 22 min</p></div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-06-8211-episode-09&lang=0')">
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BMjA4ODcxODEzMF5BMl5BanBnXkFtZTgwMzM2NTIwMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>Weapon XI: Part 1</h3><p>S6E09 • 16 Oct 2014 • 22 min</p></div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-06-8211-episode-10&lang=0')">
+    <div class="episode-thumbnail"><img src="https://m.media-amazon.com/images/M/MV5BODMyMTM4MDYwNF5BMl5BanBnXkFtZTgwNTYwNDAxMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg"></div>
+    <div class="episode-details"><h3>Weapon XI: Part 2</h3><p>S6E10 • 17 Oct 2014 • 22 min</p></div>
+</div></div>
+        <div id="season-7" class="episode-list" style="display: none;"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-07-8211-episode-01&lang=0')" >
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTQyODMxMDAwNl5BMl5BanBnXkFtZTgwMzM3ODcwMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Clyde Five</h3>
+        <p>S7E01 • 20 Oct 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-07-8211-episode-02&lang=0')" >
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjAwNjQ1NDM1MF5BMl5BanBnXkFtZTgwMDA4NTIxMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Rook Tales</h3>
+        <p>S7E02 • 21 Oct 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-07-8211-episode-03&lang=0')" >
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BZTI0MGY0YzktNzc2ZS00OTg5LWI1MTEtZGIxYTc2Y2UyZGM5XkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UY281_CR0,0,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Charm School</h3>
+        <p>S7E03 • 22 Oct 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-07-8211-episode-04&lang=0')" >
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BNDc5OTY1NTMzMF5BMl5BanBnXkFtZTgwNDMwMDgxMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>The Ballad of Mr. Baumann</h3>
+        <p>S7E04 • 23 Oct 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-07-8211-episode-05&lang=0')" >
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTYxNTYxNjcyMl5BMl5BanBnXkFtZTgwNTMwMDgxMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Fight at the Museum</h3>
+        <p>S7E05 • 24 Oct 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-07-8211-episode-06&lang=0')" >
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjAxODAwNDYxOV5BMl5BanBnXkFtZTgwMzMwMDgxMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Breakpoint</h3>
+        <p>S7E06 • 27 Oct 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-07-8211-episode-07&lang=0')" >
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTk5NzU1OTM4MF5BMl5BanBnXkFtZTgwMTM0MjU5NDE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>The Color of Monkey</h3>
+        <p>S7E07 • 28 Oct 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-07-8211-episode-08&lang=0')" >
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTQ2Mjg2OTA0OF5BMl5BanBnXkFtZTgwMTMwMDgxMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>Vreedlemania</h3>
+        <p>S7E08 • 29 Oct 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-07-8211-episode-09&lang=0')" >
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTY1OTQzNjI5N15BMl5BanBnXkFtZTgwMjMwMDgxMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>It's a Mad Ben World: Part 1</h3>
+        <p>S7E09 • 30 Oct 2014 • 22 min</p>
+    </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-07-8211-episode-10&lang=0')" >
+    <div class="episode-thumbnail">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTAwMTk1OTMyMjleQTJeQWpwZ15BbWU4MDM3ODI1MzMx._V1_QL75_UX500_CR0,47,500,281_.jpg">
+    </div>
+    <div class="episode-details">
+        <h3>It's a Mad Ben World: Part 2</h3>
+        <p>S7E10 • 31 Oct 2014 • 22 min</p>
+    </div>
+</div></div>
+        <div id="season-8" class="episode-list" style="display: none;"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-08-8211-episode-01&lang=0')" >
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BYWYxZDFmMjAtYTJiNy00MGMyLTlmYWItYmI1ZWQxYjkyOTNhXkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UX500_CR0,0,500,281_.jpg">
+  </div>
+  <div class="episode-details">
+    <h3>From Hedorium to Eternity</h3>
+    <p>S8E01 • 03 Nov 2014 • 22 min</p>
+  </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-08-8211-episode-02&lang=0')" >
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMjMwOTk3Njk5OF5BMl5BanBnXkFtZTgwMDc2NjkzMzE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+  </div>
+  <div class="episode-details">
+    <h3>Stuck on You</h3>
+    <p>S8E02 • 04 Nov 2014 • 22 min</p>
+  </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-08-8211-episode-03&lang=0')" >
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMTA1OTI2NDE0NzNeQTJeQWpwZ15BbWU4MDY2NzI0NDMx._V1_QL75_UX500_CR0,46,500,281_.jpg">
+  </div>
+  <div class="episode-details">
+    <h3>Let's Do the Time War Again</h3>
+    <p>S8E03 • 05 Nov 2014 • 22 min</p>
+  </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-08-8211-episode-04&lang=0')" >
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNzJmZGFlZGEtYjhmNi00YjBlLTg2MGItNGUyZWU4ZWFmOTg3XkEyXkFqcGdeQXVyNjQ2NzY3MjM@._V1_QL75_UY281_CR1,0,500,281_.jpg">
+  </div>
+  <div class="episode-details">
+    <h3>Secret of Dos Santos</h3>
+    <p>S8E04 • 06 Nov 2014 • 22 min</p>
+  </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-08-8211-episode-05&lang=0')" >
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BYTk0NzQ2YTYtNDBlYy00NmQzLWExMmYtZjM3YzUzZDZiZjhjXkEyXkFqcGdeQXVyMTQ5NDQzMTUw._V1_QL75_UX500_CR0,0,500,281_.jpg">
+  </div>
+  <div class="episode-details">
+    <h3>Third Time's a Charm</h3>
+    <p>S8E05 • 07 Nov 2014 • 22 min</p>
+  </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-08-8211-episode-06&lang=0')" >
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMjM2NDAyNTExN15BMl5BanBnXkFtZTgwNTU2MjE0MzE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+  </div>
+  <div class="episode-details">
+    <h3>The Final Countdown</h3>
+    <p>S8E06 • 10 Nov 2014 • 22 min</p>
+  </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-08-8211-episode-07&lang=0')" >
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMTgxMDg3MTEzNF5BMl5BanBnXkFtZTgwNTQ3OTE0MzE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+  </div>
+  <div class="episode-details">
+    <h3>Malgax Attacks</h3>
+    <p>S8E07 • 11 Nov 2014 • 22 min</p>
+  </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-08-8211-episode-08&lang=0')" >
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMTkxZmNiYjAtYTk3NC00YjYzLWJiN2UtY2MwNzcxZWU0YjE3XkEyXkFqcGdeQXVyMzExODYzNzc@._V1_QL75_UY281_CR1,0,500,281_.jpg">
+  </div>
+  <div class="episode-details">
+    <h3>The Most Dangerous Game Show</h3>
+    <p>S8E08 • 12 Nov 2014 • 22 min</p>
+  </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-08-8211-episode-09&lang=0')" >
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMjIyNzM2OTEzOF5BMl5BanBnXkFtZTgwODgzMDA1MzE@._V1_QL75_UX500_CR0,47,500,281_.jpg">
+  </div>
+  <div class="episode-details">
+    <h3>The End of an Era</h3>
+    <p>S8E09 • 13 Nov 2014 • 22 min</p>
+  </div>
+</div>
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-omniverse-8211-season-08-8211-episode-10&lang=0')" >
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNzczZjI2OGItMDRhOC00NDlhLTgwN2MtYzk3YjdlZjVhZmVjXkEyXkFqcGdeQXVyMTMxNDIyNzc1._V1_QL75_UX500_CR0,0,500,281_.jpg">
+  </div>
+  <div class="episode-details">
+    <h3>A New Dawn</h3>
+    <p>S8E10 • 14 Nov 2014 • 22 min</p>
+  </div>
+</div></div>
+
+</div><script>
+        function showSeason(season) {
+            const seasons = document.querySelectorAll('.episode-list');
+            seasons.forEach(s => s.style.display = 'none');
+            document.getElementById(`season-${season}`).style.display = 'block';
+
+            const buttons = document.querySelectorAll('.season-tab');
+            buttons.forEach(b => b.classList.remove('active'));
+            buttons[season - 1].classList.add('active');
+        }
+function OpenLink(element, url) {
+            window.open(url, '_blank');
+        }
+    </script></body></html>

@@ -1,0 +1,662 @@
+<img class="full" src="images/cl.jpg" onclick="OpenLink(this, 'index.html')">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ben 10: Classic</title><link rel="stylesheet" href="styles/pico.min.css"><style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        .episode-list img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .episode-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+        }
+        .episode-thumbnail {
+            width: 150px;
+            height: 84px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .episode-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .episode-details {
+            margin-left: 15px;
+            flex-grow: 1;
+        }
+        .episode-details h3 {
+            margin: 0 0 5px 0;
+            font-size: 1em;
+            color: white;
+        }
+        .episode-details p {
+            margin: 0;
+            color: #bbb;
+            font-size: 0.9em;
+        }
+        .season-tabs {
+            display: flex;
+            left-content: center;
+            overflow-x: auto;
+            background-color: #121212;
+            padding: 10px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .season-tab {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+        .season-tab.active, .season-tab:hover {
+            background-color: #555;
+        }
+        .season-tab:focus {
+            outline: 4px solid #121212;
+        }
+        .episode-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .episode-title h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .episode-title p {
+            margin: 0;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+<p style="color: white;">Ten-year-old Ben Tennyson discovers a mysterious device, the Omnitrix, on a family vacation. The device allows him to transform into ten different alien forms replete with unique superpowers.</p>
+        <div class="season-tabs">
+            
+          <button class="season-tab active" onclick="showSeason(1)">Season 1</button>
+            <button class="season-tab" onclick="showSeason(2)">Season 2</button>
+            <button class="season-tab" onclick="showSeason(3)">Season 3</button>
+            <button class="season-tab" onclick="showSeason(4)">Season 4</button>
+
+</div>
+
+
+        <div id="season-1" class="episode-list"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-01&lang')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BYjQ3ZTczZGYtZDBlOS00MzY1LWE2YjYtY2U1NDdiOTlhMDExXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg">
+   
+  </div>
+  <div class="episode-details">
+    <h3>And Then There Were 10</h3>
+    <p>S1E01 • 27 Dec 2005 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-02&lang')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BZWNlNTg4NTMtZTM5NC00NDQyLWJkZjctNDk1NDcyNjY2ODY2XkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Washington B.C.</h3>
+    <p>S1E02 • 14 Jan 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-03&lang')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMTA1MjAzMzEtYmRlNi00NDUwLWEwNTItOTU3ODNhNTU1M2I0XkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>The Krakken</h3>
+    <p>S1E03 • 21 Jan 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-04')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BZmU3YmI3NGQtNWNmZC00NTJkLTllY2QtZWNjZWRjOGJmMDc3XkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Permanent Retirement</h3>
+    <p>S1E04 • 28 Jan 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-05&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMTc3MjE0OTE0Ml5BMl5BanBnXkFtZTgwMzIyMDQ2MjE@._V1_QL75_UX500_CR0,47,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Hunted</h3>
+    <p>S1E05 • 04 Feb 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-06&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMjMyMDkyODk0N15BMl5BanBnXkFtZTgwNjMxMDQ2MjE@._V1_QL75_UX500_CR0,47,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Tourist Trap</h3>
+    <p>S1E06 • 11 Feb 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-07&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMzU3OTAwYzYtMDRiOC00MGZjLTkxOWUtNGMzZDE5NTkyNzkxXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Kevin 11</h3>
+    <p>S1E07 • 18 Feb 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-08&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMTY5Njk5NjQ0MF5BMl5BanBnXkFtZTgwMDQxMDQ2MjE@._V1_QL75_UX500_CR0,47,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>The Alliance</h3>
+    <p>S1E08 • 25 Feb 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-09&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BZDIwYzY0OWUtYjU4MS00MGM1LWJiOGItMGYzYWZjZThhYTJkXkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Last Laugh</h3>
+    <p>S1E09 • 04 Mar 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-10&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BYmRiZGU4MTItZDFhNy00OGY1LWE2ZjgtZGZkZWI1MjJkZWY5XkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Lucky Girl</h3>
+    <p>S1E10 • 11 Mar 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-11&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNzliOTEwN2YtNWM5YS00YjRkLWI3NDktMmNkMTc3Y2I2Zjg2XkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>A Small Problem</h3>
+    <p>S1E11 • 18 Mar 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-12&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BOTM0ZTNkNzktYzc5Ny00NzgyLTg0ZWMtZGFlMTNlMGE1N2FjXkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Side Effects</h3>
+    <p>S1E12 • 25 Mar 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-classic-8211-episode-13&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNGU4NGMzZDItYjgzMi00MDE3LWE0ZDctMGRmNTVmNWZlYTQyXkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Secrets</h3>
+    <p>S1E13 • 01 Apr 2006 • 22 min</p>
+  </div>
+</div></div>
+        <div id="season-2" class="episode-list" style="display: none;"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-01&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BOTE5OTcxN2UtOTliNC00OWNmLTg1ZmItNWZlNzQ2NWU3NTFlXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Truth</h3>
+    <p>S2E01 • 30 May 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-02&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BYTJkNWFhZmMtM2M5ZS00YTdkLWE4YWMtNGM5ODlmNjdkYTVhXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>The Big Tick</h3>
+    <p>S2E02 • 31 May 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-03&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNDgwMzBlNzgtZmE4NC00NGY0LTlhMjktZTQzNTllZjY3ZDhkXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Framed</h3>
+    <p>S2E03 • 01 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-04&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BOTRhZjk0ZTgtYWVkZi00OTY0LWE0M2QtYWMwNWM1M2JkNTM3XkEyXkFqcGdeQXVyODYyODU0NzM@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Gwen 10</h3>
+    <p>S2E04 • 02 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-05&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BYzBiNzhjM2MtNWIwYy00MDcwLWFhMzgtNzg3MmM0NTYyMWQ0XkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Grudge Match</h3>
+    <p>S2E05 • 03 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-06&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMzVjMDE2ZjgtZjM5ZC00MDIwLWEzOWEtYzRjNzdlYmUyMWIxXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>The Galactic Enforcers</h3>
+    <p>S2E06 • 04 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-07&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNjdjZjJiMjgtODY3My00Mzc3LThkM2QtNTMzYjUxNTg1ZmYwXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Camp Fear</h3>
+    <p>S2E07 • 05 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-08&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BODllMWNhNTctZTZlNi00N2I5LWIxMWYtMzZmMzAyMjZjNTkwXkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Ultimate Weapon</h3>
+    <p>S2E08 • 06 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-09&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNDNmNmNjNjEtNWIxOS00MWEyLWEyZDEtY2I0NGU0ODZiMjcxXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Tough Luck</h3>
+    <p>S2E09 • 07 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-10&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BZWQ4YmFhMjEtODczNi00MDcxLTkxN2EtYTlmYTc4OThjNTYzXkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>They Lurk Below</h3>
+    <p>S2E10 • 08 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-11&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMzA1MTAyYzYtMTRiZS00ZGUzLWJjY2UtMzgzMDIxZWEzOWFjXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Ghostfreaked Out</h3>
+    <p>S2E11 • 09 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-12&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BYzA0ZTY4ZTUtNDgzYy00OTljLTkwMjYtMjY3MDliZjQ2NjllXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Dr. Animo and the Mutant Ray</h3>
+    <p>S2E12 • 10 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-02-8211-episode-13&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BM2U4MzFlMGEtMDk2My00ZDhjLTg5NmQtOWEwMDVlYjZhOWE0XkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Back with a Vengeance</h3>
+    <p>S2E13 • 11 Jun 2006 • 22 min</p>
+  </div>
+</div></div>
+        <div id="season-3" class="episode-list" style="display: none;"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-01&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BOGM5NWFiMzItMWZkMS00ZWE3LWIwMmItOTMwYzUwMjQzZGFjXkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Ben 10,000</h3>
+    <p>S3E01 • 10 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-02&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNTk2YTlmYTYtZDAwNi00M2ZjLWI1NmEtMWU4NGYwMzAzZWJiXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Midnight Madness</h3>
+    <p>S3E02 • 17 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-03&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BOTRjZDc0YTUtZjBlZC00NzNmLTlkMDUtODM0NDIxZjlkMjFmXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>A Change of Face</h3>
+    <p>S3E03 • 24 Jun 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-04&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BY2I1YzQ0ZWItODQyMi00NzFjLThiODEtYzY4ZTkzMDg3Y2YwXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Merry Christmas</h3>
+    <p>S3E04 • 08 Jul 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-05&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNDA2MjI2NDgtNWY1MC00MzRhLThkNDYtNDJmZTE2ODlkNjJiXkEyXkFqcGdeQXVyMTQ4Mjk2NTA2._V1_QL75_UX500_CR0,5,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Benwolf</h3>
+    <p>S3E05 • 15 Jul 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-06&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMDU4OWNhZjctMTAzYS00Yzk5LWJiZDYtNTg4MzAyOGY4YTI2XkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Game Over</h3>
+    <p>S3E06 • 22 Jul 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-07&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMzQ0ZDc3MzEtNDNkMS00NWFhLWJkNGEtYjZmZWFjN2VlOWMxXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Super Alien Hero Buddy Adventures</h3>
+    <p>S3E07 • 29 Jul 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-08&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNjYxMDcyMjktYmI1YS00ZDVjLThjMmEtYzIxMzM1YjJhM2Y4XkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Under Wraps</h3>
+    <p>S3E08 • 05 Aug 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-09&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BYzAzYTk1MTYtMTk3MS00Yjc4LThiMGYtZWE4MGUwYWQxNjYwXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>The Unnaturals</h3>
+    <p>S3E09 • 19 Aug 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-10&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMjIwMzc5NDc0N15BMl5BanBnXkFtZTgwMzgzMTQ2MjE@._V1_QL75_UX500_CR0,47,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Monster Weather</h3>
+    <p>S3E10 • 26 Aug 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-11&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNmIzMGYxMjItZGZmNy00ZTNiLTliY2MtNDFjMzJiNTRmZjkxXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>The Return</h3>
+    <p>S3E11 • 02 Sep 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-12&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BYTcyZjE1OTAtZWU5OC00N2Q5LTkyMjEtOGVhMjYyY2ZkODcxXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Be Afraid of the Dark</h3>
+    <p>S3E12 • 09 Sep 2006 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-03-8211-episode-13&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNjdlOTdlZjgtNzBiMi00M2Y5LTg3NjAtYzUwNDM5ZGU4MmI3XkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>The Visitor</h3>
+    <p>S3E13 • 23 Sep 2006 • 22 min</p>
+  </div>
+</div></div>
+        <div id="season-4" class="episode-list" style="display: none;"><div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-04-8211-episode-01&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMmQ4NmU5YTItNDk0NC00ZDM1LWI4YjMtZjA3NTNkMzkwYTdlXkEyXkFqcGdeQXVyMTMyNzgyNjgz._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Perfect Day</h3>
+    <p>S4E01 • 14 Jul 2007 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-04-8211-episode-02&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BMDUyOGVjZTctMDA3Yi00MzczLWJiYmQtZmU3MzNjMWQ4YThkXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Divided We Stand</h3>
+    <p>S4E02 • 19 Jul 2007 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-04-8211-episode-03&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BYjdkZGVmMWQtNGRlMi00ZjNhLWE1ZWYtMjI5Mzk2NjRiZWJkXkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Don't Drink the Water</h3>
+    <p>S4E03 • 25 Jul 2007 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-04-8211-episode-04&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BZDA4Y2M3OWItZDJmNy00MzZkLWIwOWItMDcwZGViOTJkMzc5XkEyXkFqcGdeQXVyMTQ4Mjk2NTA2._V1_QL75_UX500_CR0,18,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Big Fat Alien Wedding</h3>
+    <p>S4E04 • 02 Aug 2007 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-04-8211-episode-05&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNDEzNjNmNGItZTljNy00NDBkLWJiYTgtYTUwMGU2MTdkNjczXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,14,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Ben 4 Good buddy</h3>
+    <p>S4E05 • 22 Sep 2007 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-04-8211-episode-06&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BNTMxZTY2MzktOTA1Ni00ZGNmLWIwY2QtOGMxYmM3NTliN2I0XkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Ready to Rumble</h3>
+    <p>S4E06 • 29 Sep 2007 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-04-8211-episode-07&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BZGE5NmU0YmEtNzM5Yi00NzFiLWI1OGEtYjNiMDFiODg5Mjc5XkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Ken 10</h3>
+    <p>S4E07 • 06 Oct 2007 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-04-8211-episode-08&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BZTkzZmUzNTMtMTBhOC00ZDM1LWE5NDQtNGRjNzc2Y2Y1MWY4XkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Ben 10 vs. the Negative 10: Part 1</h3>
+    <p>S4E08 • 03 Nov 2007 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-04-8211-episode-09&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BZTliYTFjODYtODdhZC00YzBkLTk0ZTktMDIxNjcyNWI5ZGQwXkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Ben 10 vs. the Negative 10: Part 2</h3>
+    <p>S4E09 • 31 Aug 2007 • 22 min</p>
+  </div>
+</div>
+
+<div class="episode-item" onclick="OpenLink(this, 'https://beta.awstream.net/watch?v=ben-10-8211-season-04-8211-episode-10&lang=0')">
+  <div class="episode-thumbnail">
+    <img src="https://m.media-amazon.com/images/M/MV5BY2RlOWM5NGQtOWY0ZC00YmVjLWIzYmEtNWNjNTU5NDhlZmVkXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_QL75_UX500_CR0,0,500,281_.jpg" >
+    <iframe style="display: none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="episode-details">
+    <h3>Goodbye and Good Riddance</h3>
+    <p>S4E10 • 05 Apr 2008 • 22 min</p>
+  </div>
+</div></div>
+
+
+</div>
+      
+      
+      <script>
+        function showSeason(season) {
+            const seasons = document.querySelectorAll('.episode-list');
+            seasons.forEach(s => s.style.display = 'none');
+            document.getElementById(`season-${season}`).style.display = 'block';
+
+            const buttons = document.querySelectorAll('.season-tab');
+            buttons.forEach(b => b.classList.remove('active'));
+            buttons[season - 1].classList.add('active');
+        }
+function OpenLink(element, url) {
+            window.open(url, '_blank');
+        }
+    </script></body></html>
